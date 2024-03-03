@@ -1,0 +1,81 @@
+h1, h2, h3, h4, h5, h6, p, button, li {
+    font-family: "Inter", sans-serif;
+}
+
+a:link, a:visited, a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    height: 100dvh;
+    background: linear-gradient(90deg, rgb(9, 3, 48) 0%, rgba(28, 32, 116, 0.742) 65%, rgba(3, 59, 127, 0.823) 100%);
+    margin: 0;
+    padding: 0;
+    /* overflow: hidden; */
+}
+
+.navbar {
+    background: rgba(0, 0, 0, 0.708);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    display: flex;
+    gap: 20px;
+    position: fixed;
+}
+
+.navbar h5 {
+    color: white;
+    transition: 0.3s;
+    cursor: pointer;
+    border-bottom: 1px solid rgba(255, 255, 255, 0);
+    border-bottom-width: 0px;
+    padding-bottom: 2px;
+}
+
+.navbar h5:hover {
+    transform: scale(1.11);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.95);
+}
+
+.mainpage {
+    display: flex;
+    width: 100%;
+    /* height: 100%; */
+    justify-content: center;
+    padding-top: 100px;
+}
+
+.mainpage-content {
+    padding: 20px 40px;
+    border-radius: 40px;
+    border: 3px dashed rgba(0, 0, 0, 0.147);
+    width: 80%;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.imageinfo-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 15px;
+}
+
+.p90-image {
+    width: 30%;
+    border-radius: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.585);
+}
+
+.p90info {
+    float: right;
+    width: 20%;
+    border-radius: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.585);
+    border: 3px dotted rgba(0, 0, 0, 0.334);
+}
+
+.p90infobullet {
+    width: 18%;
+}
