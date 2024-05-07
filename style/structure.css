@@ -23,6 +23,7 @@ body {
     display: flex;
     gap: 20px;
     position: fixed;
+    z-index: 1;
 }
 
 .navbar h5 {
@@ -63,9 +64,12 @@ body {
 }
 
 .p90-image {
-    width: 30%;
+    float: right;
+    width: 25%;
     border-radius: 20px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.585);
+    transition: 0.3s;
+    margin-left: 30px;
 }
 
 .p90info {
@@ -74,8 +78,26 @@ body {
     border-radius: 20px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.585);
     border: 3px dotted rgba(0, 0, 0, 0.334);
+    transition: 0.3s;
 }
 
 .p90infobullet {
-    width: 18%;
+    width: 15%;
+}
+
+.image-hover:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+#closeIcon {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    cursor: pointer;
+}
+
+.float-left {
+    float: left;
+    margin-right: 20px;
 }
